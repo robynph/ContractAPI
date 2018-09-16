@@ -20,6 +20,4 @@ def loadStoreData():
 
     if request.method == 'GET':
 
-            print("Received value of request :: ", request)
-
-        
+            return ("Received value of request :: ")
