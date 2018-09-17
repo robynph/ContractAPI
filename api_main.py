@@ -33,4 +33,4 @@ def transDetailGET():
 def regDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id" : "App id1", "walletID" : "0xwallet", "transID" : "0xtransID", "Total Revenue" : "$###,###", "Total Bundles Generated" : "$###,###"})
+            return jsonify({"app_id" : "App id1" {"walletID" : "0xwallet" {"transID" : "0xtransID", "Total Revenue" : "$###,###", "Total Bundles Generated" : "$###,###"}}})
