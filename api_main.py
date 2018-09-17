@@ -21,15 +21,3 @@ def test():
 
     if request.method == 'GET':
             return ("This is a test :) ")
-
-@app.route("/transDetailGET", methods=['GET'])
-def transDetailGET():
-
-    if request.method == 'GET':
-            return jsonify({"app_id” : “App id1”})
-
-@app.route("/regDetailGET", methods=['GET'])
-def regDetailGET():
-
-    if request.method == 'GET':
-            return jsonify({"app_id” : “App id1”})
