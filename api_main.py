@@ -26,10 +26,10 @@ def test():
 def regDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id” : “App id1”})
+            return jsonify({"app_id" : "App id1"})
 
 @app.route("/transDetailGET", methods=['GET'])
 def transDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id” : “App id1”})
+            return jsonify({"app_id" : "App id1"})
