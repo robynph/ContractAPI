@@ -26,11 +26,10 @@ def test():
 def transDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id” : “App id1”, “model_id” : “Model id1”, “Date” : “Sept. 16, 2018”, “order_id” : “2348858”, “trans_id” : “0xtransID”, “selected_product” : “sku1”, “bundled_products” : “order line item sku”, “Original Revnue” : “$####”, “Total Revenue” : “$#####”}
-)
+            return jsonify({"app_id” : “App id1”})
 
 @app.route("/regDetailGET", methods=['GET'])
 def regDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id” : “App id1”, “walletID” : “0xwallet”, “transID” : “0xtransiD”, “Total Revenue” : “$###,###”, “Total Bundles Generated” : “$###,###”})
+            return jsonify({"app_id” : “App id1”})
