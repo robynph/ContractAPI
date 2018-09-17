@@ -26,4 +26,10 @@ def test():
 def regDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"Status" : "S","Message" : "test"})
+            return jsonify({"app_id” : “App id1”})
+
+@app.route("/regDetailGET", methods=['GET'])
+def regDetailGET():
+
+    if request.method == 'GET':
+            return jsonify({"app_id” : “App id1”})
