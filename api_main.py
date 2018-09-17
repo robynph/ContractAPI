@@ -27,10 +27,16 @@ def test():
 def transDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id" : "App id1","model_id" : "Model id1","Date" : "Sept. 16, 2018","order_id" : "2348858","trans_id" : "0xtransID","selected_product" : "sku1","bundled_products" : "order line item sku","Original Revenue" : "$####","Total Revenue" : "$####"})
+            return jsonify({"app_id":"appID", "model_id": {
+     "Model id1": [
+         {"transID" : "0xtransID1", "Date" : "Sept. 16, 2018", "order_id" : "order1", "selected_product" : "sku1", "bundled_products" : "order line item sku", "Original Revnue" : "$####", "Total Revenue" : "$#####"},
+         {"transID" : "0xtransID2", "Date" : "Sept. 17, 2018", "order_id" : "order2", "selected_product" : "sku2", "bundled_products" : "order line item sku2", "Original Revnue" : "$####2", "Total Revenue" : "$#####2"}
+      ],
+     }
+})
 
 @app.route("/regDetailGET", methods=['GET'])
 def regDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id":"appID", "walletID": {"0xwallet": [{"transID1" : "0xtransID1", "Total Revenue" : "$###,###", "Total Bundles Generated" : "$###,###"},{"transID2" : "0xtransID2", "Total Revenue" : "$###,###", "Total Bundles Generated" : "$###,###"}],}})
+            return jsonify({"app_id":"appID", "walletID":"0xwallet", "Total Revenue" : "$###,###", "Total Bundles Generated" : "$###,###"})
