@@ -22,14 +22,15 @@ def test():
     if request.method == 'GET':
             return ("This is a test :) ")
 
-@app.route("/regDetailGET", methods=['GET'])
-def regDetailGET():
-
-    if request.method == 'GET':
-            return jsonify({"app_id" : "App id1"})
 
 @app.route("/transDetailGET", methods=['GET'])
 def transDetailGET():
 
     if request.method == 'GET':
-            return jsonify({"app_id" : "App id1"})
+            return jsonify({"app_id" : "App id1","model_id" : "Model id1","Date" : "Sept. 16, 2018","order_id" : "2348858","trans_id" : "0xtransID","selected_product" : "sku1","bundled_products" : "order line item sku","Original Revenue" : "$####","Total Revenue" : "$####"})
+
+@app.route("/regDetailGET", methods=['GET'])
+def regDetailGET():
+
+    if request.method == 'GET':
+            return jsonify({"app_id" : "App id1", "walletID" : "0xwallet", "transID" : "0xtransID", "Total Revenue" : "$###,###", "Total Bundles Generated" : "$###,###"})
